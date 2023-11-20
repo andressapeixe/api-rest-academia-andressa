@@ -23,7 +23,7 @@ module.exports = (sequelize, DataTypes) => {
     }
   });
 
-  // Relacionamento entre Turma e Instrutor
+  // Relacionamento entre Turma e Instrutor---
   Turma.belongsTo(sequelize.models.instrutor, {
     foreignKey: 'id_instrutor',
     as: 'instrutor',
